@@ -80,7 +80,7 @@ assets:
   autowrite: true
   cache: .asset-cache
   cache_type: filesystem
-  prefix: "/assets"
+  prefix: "assets"
   digest: true
 
   assets:

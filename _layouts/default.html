@@ -13,22 +13,21 @@
     {% seo %}
 
     <!-- Bootstrap Core CSS -->
-    <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ site.baseurl_root }}/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="/assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="{{ site.baseurl_root }}/assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 
     <!-- Plugin CSS -->
-    <link href="/assets/vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
-
+    <link href="{{ site.baseurl_root }}/assets/vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+ 
     <!-- Theme CSS -->
     {% css creative %}
 </head>
 
 <body id="page-top">
-
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -38,21 +37,20 @@
                 </button>
                 <a class="navbar-brand page-scroll" href="#page-top">Start Bootstrap</a>
             </div>
-
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a class="page-scroll" href="#about">About</a>
+                        <a class="page-scroll" href="#about">{% t navigation.about %}</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services">Services</a>
+                        <a class="page-scroll" href="#services">{% t navigation.services %}</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#portfolio">Portfolio</a>
+                        <a class="page-scroll" href="#portfolio">{% t navigation.portfolio %}</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
+                        <a class="page-scroll" href="#contact">{% t navigation.contact %}</a>
                     </li>
                 </ul>
             </div>
@@ -61,7 +59,7 @@
         <!-- /.container-fluid -->
     </nav>
 
-    <header>
+    <header style="background-image:url({{ site.baseurl_root }}/assets/images/header.jpg);">
         <div class="header-content">
             <div class="header-content-inner">
                 <h1 id="homeHeading">Your Favorite Source of Free Bootstrap Themes</h1>
@@ -87,18 +85,18 @@
     </footer>
 
     <!-- jQuery -->
-    <script src="/assets/vendor/jquery/jquery.min.js"></script>
+    <script src="{{ site.baseurl_root }}/assets/vendor/jquery/jquery.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="/assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="{{ site.baseurl_root }}/assets/vendor/bootstrap/js/bootstrap.min.js"></script>
 
     <!-- Plugin JavaScript -->
-    <script src="/assets/vendor/jquery-easing/jquery.easing.min.js"></script>
-    <script src="/assets/vendor/scrollreveal/scrollreveal.min.js"></script>
-    <script src="/assets/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="{{ site.baseurl_root }}/assets/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="{{ site.baseurl_root }}/assets/vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="{{ site.baseurl_root }}/assets/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
 
     <!-- Theme JavaScript -->
-    <script src="/assets/js/creative.js"></script>
+    <script src="{{ site.baseurl_root }}/assets/js/creative.js"></script>
 </body>
 
 </html>

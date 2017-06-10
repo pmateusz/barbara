@@ -165,7 +165,6 @@ header {
     min-height: auto;
     @include background-cover;
     background-position: center;
-    background-image: url('{{ site.baseurl_root }}/assets/images/header.jpg');
     text-align: center;
     color: white;
     .header-content {

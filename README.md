@@ -10,11 +10,14 @@ bundle update
 
 ## Build
 ```shell
-bundle exec jekyll serve --drafts --base-url ''
+bundle exec jekyll serve --drafts --baseurl ''
 ```
 
 ## Publish
 ```shell
+rm -Rf docs
+bundle exec jekyll serve
+
 JEKYLL_ENV=production rake publish
 ```
 

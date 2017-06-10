@@ -54,7 +54,7 @@ detach:  false
 port:    4000
 host:    127.0.0.1
 url: https://pmateusz.github.io
-baseurl: /barbara/ # does not include hostname
+baseurl: /barbara # does not include hostname
 show_dir_listing: false
 
 # Outputting

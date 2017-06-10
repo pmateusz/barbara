@@ -358,3 +358,28 @@ img::-moz-selection {
 body {
    -webkit-tap-highlight-color: $gray-darker;
 }
+
+// Customizations
+footer {
+    position: relative;
+    width: 100%;
+    min-height: auto;
+    background-position: center;
+    text-align: center;
+    background-color: #F2F2F2;
+    
+    .footer-content {
+        padding-top: 15px;
+        position: relative;
+        text-align: left;
+        width: 100%;
+    }
+
+    .copyright {
+        font-size: 13px;
+
+        a {
+            color: $gray-darker;
+        }
+    }
+}

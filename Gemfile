@@ -12,7 +12,8 @@ plugins = [
     'github-pages',
     'jekyll-feed',
     'jekyll-assets',
-    'mini_magick'
+    'mini_magick',
+    'jekyll-multiple-languages-plugin'
 ]
 
 for plugin in plugins;

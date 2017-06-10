@@ -10,7 +10,7 @@ bundle update
 
 ## Build
 ```shell
-bundle exec jekyll serve --drafts
+bundle exec jekyll serve --drafts --base-url ''
 ```
 
 ## Publish

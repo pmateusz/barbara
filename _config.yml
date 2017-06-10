@@ -53,8 +53,8 @@ incremental: true
 detach:  false
 port:    4000
 host:    127.0.0.1
-url: https://pmateusz.github.io/barbara
-baseurl: "" # does not include hostname
+url: https://pmateusz.github.io
+baseurl: /barbara # does not include hostname
 show_dir_listing: false
 
 # Outputting
@@ -93,6 +93,13 @@ assets:
     - assets/css
     - _sass
 
+# Language settings
+languages: ["", "pl", "en", "de"]
+exclude_from_localizations: ["assets", "docs", ".sass-cache", ".asset-cache"]
+languageNames:
+  pl: Polski
+  de: Deutsch
+  en: English
 
 # Build settings
 markdown: kramdown
@@ -103,6 +110,7 @@ gems:
   - jekyll-seo-tag
   - jekyll-feed
   - jekyll-paginate
+  - jekyll-multiple-languages-plugin
   - jekyll-assets
 exclude:
   - Gemfile

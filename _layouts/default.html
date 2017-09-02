@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Creative - Start Bootstrap Theme</title>
+    <title> {% t page.title %} </title>
 
     {% seo %}
 
@@ -33,24 +33,18 @@
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                    <span class="sr-only">Toggle navigation</span> {% t navigation.menu %} <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Start Bootstrap</a>
+                <a class="navbar-brand page-scroll" href="#page-top"> {% t navigation.start %} </a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a class="page-scroll" href="#about">{% t navigation.about %}</a>
+                        <a class="page-scroll" href="{% tl blog %}">{% t navigation.blog %}</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services">{% t navigation.services %}</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#portfolio">{% t navigation.portfolio %}</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">{% t navigation.contact %}</a>
+                        <a class="page-scroll" href="{% tl about %}">{% t navigation.about %}</a>
                     </li>
                 </ul>
             </div>
@@ -62,10 +56,10 @@
     <header style="background-image:url({{ site.baseurl_root }}/assets/images/header.jpg);">
         <div class="header-content">
             <div class="header-content-inner">
-                <h1 id="homeHeading">Your Favorite Source of Free Bootstrap Themes</h1>
+                <h1 id="homeHeading">{% t home.welcome %}</h1>
                 <hr>
-                <p>Start Bootstrap can help you build better websites using the Bootstrap CSS framework! Just download your template and start going, no strings attached!</p>
-                <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
+                <a href="{% tl blog %}" class="btn btn-primary btn-xl">{% t navigation.blog %}</a>
+                <a href="{% tl about %}" class="btn btn-primary btn-xl">{% t navigation.contact %}</a>
             </div>
         </div>
     </header>
@@ -81,14 +75,19 @@
                 <div class="col-xs-6 col-md-2">
                     <div class="btn-group dropup">
                         <button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            {% if site.lang == "" %}
+                            {% t navigation.language %}
+                            {% else %}
                             {{ site.languageNames[site.lang] }}
-                            <span class="caret"></span>
+                            {% endif %} 
                         </button>
                         <ul class="dropdown-menu">
+                            {% if site.lang != "" %}
                             <li><a class="active" href="#">{{ site.languageNames[site.lang] }}</a></li>
                             <li role="separator" class="divider"></li>
+                            {% endif %} 
                             {% for lang in site.languageNames %}
-                            {% if lang[0] == site.lang %} {% continue %} {% endif %}
+                            {% if lang[0] == site.lang or lang[0] == "" %} {% continue %} {% endif %}
                             {% if page.namespace %}
                             <li><a href="{% tl {{ page.namespace }} {{ lang[0] }} %}">{{ lang[1] }}</a></li>
                             {% else %}

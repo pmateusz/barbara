@@ -1,5 +1,11 @@
+pages:
+  home: "Strona domowa Barbary Piesowicz"
+  about: "O Mnie"
 navigation:
-  about: O nas
-  services: Usługi
-  portfolio: Portfolio
+  start: Start
+  blog: Blog
   contact: Kontakt
+  menu: Menu
+  about: O Mnie
+home:
+  welcome: Strona domowa Barbary Piesowicz

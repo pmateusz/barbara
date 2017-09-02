@@ -1,5 +1,11 @@
+pages:
+  home: "Barbara Piesowicz's Homepage"
+  about: "Über mich"
 navigation:
-  about: Über uns
-  services: Dienstleistungen
-  portfolio: Portfolio
+  start: Start
+  blog: Blog
   contact: Kontakt
+  menu: Menu
+  about: Über mich
+home:
+  welcome: Barbara Piesowicz's Homepage

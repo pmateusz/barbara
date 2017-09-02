@@ -41,7 +41,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a class="page-scroll" href="{% tl blog %}">{% t navigation.blog %}</a>
+                        <a class="page-scroll" href="{% tl about %}">{% t navigation.blog %}</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="{% tl about %}">{% t navigation.about %}</a>
@@ -58,13 +58,15 @@
             <div class="header-content-inner">
                 <h1 id="homeHeading">{% t home.welcome %}</h1>
                 <hr>
-                <a href="{% tl blog %}" class="btn btn-primary btn-xl">{% t navigation.blog %}</a>
-                <a href="{% tl about %}" class="btn btn-primary btn-xl">{% t navigation.contact %}</a>
+                <a href="{% tl about %}" class="btn btn-primary btn-xl">{% t navigation.blog %}</a>
+                <a href="{% tl about %}" class="btn btn-primary btn-xl">{% t navigation.about %}</a>
             </div>
         </div>
     </header>
 
+    <div class="container"> 
     {{ content }}
+    </div>
 
     <footer>
         <div class="container footer-content">

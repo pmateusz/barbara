@@ -1,9 +1,3 @@
----
-layout: default
-namespace: about
-permalink: /about/
----
-
 Barbara Piesowicz, LL.M.
 Wykształcenie:
 Uniwersytet Jagielloński w Krakowie, kierunek – prawo

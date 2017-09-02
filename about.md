@@ -1,7 +1,11 @@
 ---
 layout: page
 title: pages.about
-permalink: /about/
+
+namespace: about
+permalink: /about-me/
+permalink_pl: /o-mnie/
+permalink_de: /ueber-mich/
 ---
 
-{% translate_file about.md %}
+{% tf about/about.md %}

@@ -10,5 +10,5 @@ navigation:
   menu: Menu
   about: About
 home:
-  title: "Barbara Piesowicz's homepage"
-  welcome: Barbara Piesowicz's homepage
+  welcome_title: Barrister Barbara Piesowicz
+  welcome_subtitle: Homepage

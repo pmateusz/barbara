@@ -27,95 +27,12 @@
     {% css creative %}
 </head>
 
-<body id="page-top">
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> {% t navigation.menu %} <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top"> {% t navigation.start %} </a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a class="page-scroll" href="{% tl about %}">{% t navigation.blog %}</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="{% tl about %}">{% t navigation.about %}</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
+<body>
+    {% include navigation.html %}
 
-    <header style="background-image:url({{ site.baseurl_root }}/assets/images/header.jpg);">
-        <div class="header-content">
-            <div class="header-content-inner">
-                <h1 id="homeHeading">{% t home.welcome %}</h1>
-                <hr>
-                <a href="{% tl about %}" class="btn btn-primary btn-xl">{% t navigation.blog %}</a>
-                <a href="{% tl about %}" class="btn btn-primary btn-xl">{% t navigation.about %}</a>
-            </div>
-        </div>
-    </header>
-
-    <div class="container"> 
     {{ content }}
-    </div>
 
-    <footer>
-        <div class="container footer-content">
-            <div class="row">
-                <div class="col-xs-12 col-md-10">
-                    <p class="copyright">&copy; {{ site.time | date: '%Y' }} Mateusz Polnik • Derived from a template by <a href="http://blackrockdigital.io/">Blackrock Digital</a></p>
-                </div>
-                <div class="col-xs-6 col-md-2">
-                    <div class="btn-group dropup">
-                        <button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            {% if site.lang == "" %}
-                            {% t navigation.language %}
-                            {% else %}
-                            {{ site.languageNames[site.lang] }}
-                            {% endif %} 
-                        </button>
-                        <ul class="dropdown-menu">
-                            {% if site.lang != "" %}
-                            <li><a class="active" href="#">{{ site.languageNames[site.lang] }}</a></li>
-                            <li role="separator" class="divider"></li>
-                            {% endif %} 
-                            {% for lang in site.languageNames %}
-                            {% if lang[0] == site.lang or lang[0] == "" %} {% continue %} {% endif %}
-                            {% if page.namespace %}
-                            <li><a href="{% tl {{ page.namespace }} {{ lang[0] }} %}">{{ lang[1] }}</a></li>
-                            {% else %}
-                            <li><a href="{{ site.baseurl_root }}/{{ lang[0] }}/">{{ lang[1] }}</a></li>
-                            {% endif %}
-                            {% endfor %}
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- jQuery -->
-    <script src="{{ site.baseurl_root }}/assets/vendor/jquery/jquery.min.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="{{ site.baseurl_root }}/assets/vendor/bootstrap/js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="{{ site.baseurl_root }}/assets/vendor/jquery-easing/jquery.easing.min.js"></script>
-    <script src="{{ site.baseurl_root }}/assets/vendor/scrollreveal/scrollreveal.min.js"></script>
-    <script src="{{ site.baseurl_root }}/assets/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-
-    <!-- Theme JavaScript -->
-    <script src="{{ site.baseurl_root }}/assets/js/creative.js"></script>
+    {% include footer.html %}
 </body>
 
 </html>

@@ -11,4 +11,5 @@ navigation:
   about: About
   language: Language 
 home:
-  welcome: Barbara Piesowicz's Homepage
+  welcome_title: Barrister Barbara Piesowicz
+  welcome_subtitle: Homepage

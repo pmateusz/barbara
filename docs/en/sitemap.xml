@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://localhost:4000/barbara/en/about-me/</loc>
+<loc>http://localhost:4000/en/about-me/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/barbara/en/</loc>
+<loc>http://localhost:4000/en/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/barbara/en/docs/about-me/index.html</loc>
-<lastmod>2017-09-02T21:01:06+01:00</lastmod>
+<loc>http://localhost:4000/en/docs/about-me/index.html</loc>
+<lastmod>2017-09-03T16:46:13+01:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/barbara/en/docs/index.html</loc>
-<lastmod>2017-09-02T21:01:06+01:00</lastmod>
+<loc>http://localhost:4000/en/docs/index.html</loc>
+<lastmod>2017-09-03T16:46:13+01:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/barbara/en/docs/pl/index.html</loc>
-<lastmod>2017-09-02T21:01:06+01:00</lastmod>
+<loc>http://localhost:4000/en/docs/pl/index.html</loc>
+<lastmod>2017-09-03T16:46:13+01:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/barbara/en/docs/pl/o-mnie/index.html</loc>
-<lastmod>2017-09-02T21:01:06+01:00</lastmod>
+<loc>http://localhost:4000/en/docs/pl/o-mnie/index.html</loc>
+<lastmod>2017-09-03T16:46:13+01:00</lastmod>
 </url>
 </urlset>

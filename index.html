@@ -2,3 +2,16 @@
 layout: default
 title: pages.home
 ---
+
+<header style="background-image:url({{ site.baseurl_root }}/assets/images/header.jpg);">
+    <div class="header-content">
+        <div class="header-content-inner">
+            <h1 id="homeHeading">{% t home.welcome_title %}</h1>
+            <hr>
+            <p>{% t home.welcome_subtitle %}</p>
+
+            <a href="{% tl about %}" class="btn btn-primary btn-xl">{% t navigation.blog %}</a>
+            <a href="{% tl about %}" class="btn btn-primary btn-xl">{% t navigation.about %}</a>
+        </div>
+    </div>
+</header>

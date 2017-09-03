@@ -10,4 +10,5 @@ navigation:
   menu: Menu
   about: O Mnie
 home:
-  welcome: Strona domowa Barbary Piesowicz
+  welcome_title: Adwokat Barbara Piesowicz
+  welcome_subtitle: Strona domowa

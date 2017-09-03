@@ -218,6 +218,13 @@ header {
     }
 }
 
+.header-small {
+    @media (min-width: 768px) {
+        min-height: 50px;
+    }
+    background-color: $gray-lighter
+}
+
 // Sections
 
 .section-heading {
@@ -376,7 +383,7 @@ footer {
     }
 
     .copyright {
-        font-size: 13px;
+        font-size: 12px;
 
         a {
             color: $gray-darker;

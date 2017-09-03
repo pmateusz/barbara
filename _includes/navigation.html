@@ -1,0 +1,30 @@
+<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span> {% t navigation.menu %} <i class="fa fa-bars"></i>
+            </button>
+            {% if site.lang != "" %}
+            <a class="navbar-brand page-scroll" href="{{ site.baseurl_root }}/{{ site.lang }}/">
+            {% else %} 
+            <a class="navbar-brand page-scroll" href="{{ site.baseurl_root }}/">
+            {% endif %}
+            {% t navigation.start %}
+            </a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a class="page-scroll" href="{% tl about %}">{% t navigation.blog %}</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="{% tl about %}">{% t navigation.about %}</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>

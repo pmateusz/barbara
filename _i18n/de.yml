@@ -10,4 +10,5 @@ navigation:
   menu: Menu
   about: Über mich
 home:
-  welcome: Barbara Piesowicz's Homepage
+  welcome_title: Rechtsanwalt Barbara Piesowicz
+  welcome_subtitle: Homepage

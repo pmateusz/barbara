@@ -1,8 +1,7 @@
-link:
-  about: /o-nas/
 pages:
   home: "Strona domowa Barbary Piesowicz"
   about: "O Mnie"
+  blog: "Blog"
 navigation:
   start: Start
   blog: Blog
@@ -12,3 +11,6 @@ navigation:
 home:
   welcome_title: Adwokat Barbara Piesowicz
   welcome_subtitle: Strona domowa
+blog:
+  latest_posts: Ostatnie posty
+  go_to_article: Idź do artykułu

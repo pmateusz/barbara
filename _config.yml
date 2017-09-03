@@ -115,3 +115,19 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: default
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+      comments: true
+      excerpt_separator: <!--more-->

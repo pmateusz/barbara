@@ -12,3 +12,6 @@ navigation:
 home:
   welcome_title: Rechtsanwalt Barbara Piesowicz
   welcome_subtitle: Homepage
+blog:
+  latest_posts: Letzte Beiträge
+  go_to_article: Gehen Sie zum Artikel

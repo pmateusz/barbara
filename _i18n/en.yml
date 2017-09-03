@@ -12,3 +12,6 @@ navigation:
 home:
   welcome_title: Barrister Barbara Piesowicz
   welcome_subtitle: Homepage
+blog:
+  latest_posts: Latest posts
+  go_to_article: Go to the article

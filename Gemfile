@@ -8,12 +8,12 @@ plugins = [
     'jekyll-archives',
     'jekyll-paginate',
     'jekyll-sitemap',
-    'jekyll-seo-tag',
     'github-pages',
     'jekyll-feed',
     'jekyll-assets',
     'mini_magick',
-    'jekyll-multiple-languages-plugin'
+    'jekyll-multiple-languages-plugin',
+    'jekyll-seo-tag'
 ]
 
 for plugin in plugins;

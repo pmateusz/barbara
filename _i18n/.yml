@@ -1,13 +1,14 @@
 pages:
-  home: "Strona domowa Barbary Piesowicz"
-  about: "O Mnie"
-  blog: "Blog"
+  home: Strona domowa Barbary Piesowicz
+  about: O Mnie
+  blog: Blog
 navigation:
   start: Start
   blog: Blog
   contact: Kontakt
   menu: Menu
   about: O Mnie
+  language: Polski
 home:
   welcome_title: Adwokat Barbara Piesowicz
   welcome_subtitle: Strona domowa

@@ -1,1 +1,1 @@
-Sitemap: http://localhost:4000/barbara/en/sitemap.xml
+Sitemap: https://pmateusz.github.io/barbara/en/sitemap.xml

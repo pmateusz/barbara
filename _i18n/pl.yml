@@ -1,7 +1,7 @@
 pages:
-  home: "Strona domowa Barbary Piesowicz"
-  about: "O Mnie"
-  blog: "Blog"
+  home: Strona domowa Barbary Piesowicz
+  about: O Mnie
+  blog: Blog
 navigation:
   start: Start
   blog: Blog

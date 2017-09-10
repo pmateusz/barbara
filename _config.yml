@@ -101,6 +101,10 @@ languageNames:
   de: Deutsch
   en: English
 
+# Frontend
+google_analytics_key: UA-106184824-1
+disqus_shortname: pmateusz-github-io
+
 # Build settings
 markdown: kramdown
 theme: minima

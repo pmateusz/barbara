@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://localhost:4000/barbara/2017/09/03/faq.html</loc>
+<loc>https://pmateusz.github.io/barbara/2017/09/03/faq.html</loc>
 <lastmod>2017-09-03T00:00:00+01:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/barbara/about-me/</loc>
+<loc>https://pmateusz.github.io/barbara/about-me/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/barbara/blog/</loc>
+<loc>https://pmateusz.github.io/barbara/blog/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/barbara/</loc>
+<loc>https://pmateusz.github.io/barbara/</loc>
 </url>
 </urlset>

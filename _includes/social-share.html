@@ -75,7 +75,7 @@
     document.getElementById('facebook-share').onclick = function () {
         FB.ui({
             method: 'share',
-            href: '{{site.url}}{{page.url}}',
+            href: '{{site.url}}barbara{{page.url}}',
         }, function(response){});
 	    return false;
     };
@@ -83,7 +83,7 @@
     document.getElementById('messenger-send').onclick = function () {
         FB.ui({
             method: 'send',
-            link: '{{site.url}}{{page.url}}',
+            link: '{{site.url}}barbara{{page.url}}',
         }, function(response){});
 	    return false;
     };

@@ -103,7 +103,8 @@ languageNames:
 
 # Frontend
 google_analytics_key: UA-106184824-1
-disqus_shortname: pmateusz-github-io
+facebook_app_id: 1732461850388822
+disqus_shortname: adwokat-b-piesowicz
 
 # Build settings
 markdown: kramdown

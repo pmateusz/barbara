@@ -1,0 +1,90 @@
+
+<hr>
+<div class='container social-container'>
+    <h3>{% t blog.social_share %}</h3>
+    <ul>
+        <li class='share-email'>
+            <a href='mailto:?subject=Shared%20from%20Kancelaria%20Barbary%20Piesowicz&body={{site.url}}{{page.url}}'>
+                <div>
+                {% include social-icon.html icon='Envelope-o' %}
+                </div>
+                <span>Email</span>
+            </a>
+        </li>
+        <li class='share-facebook'>
+            <a id='facebook-share'>
+                <div>
+                {% include social-icon.html icon='Facebook' %}
+                </div>
+                <span>Facebook</span>
+            </a>
+        </li>
+        <li class='share-messenger'>
+            <a id='messenger-send'>
+                <div>
+                {% include social-icon.html icon='Messenger' %}
+                </div>
+                <span>Messenger</span>
+            </a>
+        </li>
+        <li class='share-twitter'>
+            <a href='https://twitter.com/intent/tweet?text={{ page.title | url_encode }}&url={{site.url}}{{page.url}}'>
+                <div>
+                {% include social-icon.html icon='Twitter' %}
+                </div>
+                <span>Twitter</span>
+            </a>
+        </li>
+        <li class='share-pinterest'>
+            <!-- todo add pinterest media tag -->
+            <a href="https://pinterest.com/pin/create/bookmarklet/?url={{site.url}}{{page.url}}&description={{ post.excerpt | remove: '<p>' | remove: '</p>'| url_encode }}&title={{ page.title | url_encode }}?cb=1">
+                <div>
+                    {% include social-icon.html icon='Pinterest' %}
+                </div>
+                <span>Pinterest</span>
+            </a>
+        </li>
+        <li class='share-linkedin'>
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url={{site.url}}{{page.url}}&title={{ page.title | url_encode }}&summary={{ post.excerpt | remove: '<p>' | remove: '</p>'| url_encode }}&source=Kancelaria%20Barbary%20Piesowicz">
+                <div>
+                    {% include social-icon.html icon='LinkedIn' %}
+                </div>
+                <span>LinkedIn</span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId: '{{site.facebook_app_id}}}',
+      xfbml: true,
+      version: 'v2.8'
+    });
+  };
+
+  (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = '//connect.facebook.net/en_US/sdk.js';
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+
+    document.getElementById('facebook-share').onclick = function () {
+        FB.ui({
+            method: 'share',
+            href: '{{site.url}}{{page.url}}',
+        }, function(response){});
+	    return false;
+    };
+
+    document.getElementById('messenger-send').onclick = function () {
+        FB.ui({
+            method: 'send',
+            link: '{{site.url}}{{page.url}}',
+        }, function(response){});
+	    return false;
+    };
+</script>

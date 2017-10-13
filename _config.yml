@@ -94,8 +94,9 @@ assets:
     - _sass
 
 # Language settings
-languages: ["", "pl", "en", "de"]
+languages: ["pl", "en", "de"]
 exclude_from_localizations: ["assets", "docs", ".sass-cache", ".asset-cache"]
+
 languageNames:
   pl: Polski
   de: Deutsch

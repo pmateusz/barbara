@@ -22,10 +22,18 @@
                         {% endif %} 
                         {% for lang in site.languageNames %}
                         {% if lang[0] == site.lang or lang[0] == "" %} {% continue %} {% endif %}
-                        {% if page.namespace %}
-                        <li><a href="{% tl {{ page.namespace }} {{ lang[0] }} %}">{{ lang[1] }}</a></li>
+                        {% if lang[0] == "pl" %}
+                            {% if page.namespace %}
+                            <li><a href="{% tl {{ page.namespace }} {{ lang[0] }} %}">{{ lang[1] }}</a></li>
+                            {% else %}
+                            <li><a href="{{ site.baseurl_root }}/">{{ lang[1] }}</a></li>
+                            {% endif %}
                         {% else %}
-                        <li><a href="{{ site.baseurl_root }}/{{ lang[0] }}/">{{ lang[1] }}</a></li>
+                            {% if page.namespace %}
+                            <li><a href="{% tl {{ page.namespace }} {{ lang[0] }} %}">{{ lang[1] }}</a></li>
+                            {% else %}
+                            <li><a href="{{ site.baseurl_root }}/{{ lang[0] }}/">{{ lang[1] }}</a></li>
+                            {% endif %}
                         {% endif %}
                         {% endfor %}
                     </ul>

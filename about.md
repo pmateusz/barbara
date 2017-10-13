@@ -12,7 +12,7 @@ permalink_de: /ueber-mich/
   <div class="container-fluid">
     <div class="row">  
       <div class="col-md-4">
-        {% img barbara alt:'Barbara Piesowicz' class:'img-thumbnail center-block' magick:resize:600x450 %}
+        <img src="/assets/images/barbara-e041824e4952149bad22fe28dc60cfdaf11a04bfc315c8d08e33539173901b90.jpg" alt="Barbara Piesowicz" class="img-thumbnail center-block" width="312" height="450">
       </div>
       <div class="col-md-8">
         <h1>Barbara Piesowicz</h1> 

@@ -1,1 +1,1 @@
-Sitemap: https://pmateusz.github.io/barbara/pl/sitemap.xml
+Sitemap: http://www.kancelariapiesowicz.pl/pl/sitemap.xml

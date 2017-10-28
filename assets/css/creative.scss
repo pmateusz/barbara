@@ -1,6 +1,7 @@
 @import "variables.scss";
 @import "mixins.scss";
 @import "forms.scss";
+@import "blog.scss";
 
 // Global Components
 html,
@@ -10,7 +11,7 @@ body {
 }
 
 body {
-    @include serif-font;
+    @include sans-serif-font;
 }
 
 hr {
@@ -68,7 +69,17 @@ aside {
     padding: 50px 0;
 }
 
-.no-padding {
+.no-padding {.blog-post {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: $header-bg-color;
+    }
+}
+
     padding: 0;
 }
 
@@ -89,7 +100,17 @@ aside {
             color: darken($theme-primary, 10%);
         }
     }
-    .navbar-header .navbar-toggle {
+    .navbar-header .navbar-toggle {.blog-post {
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: $header-bg-color;
+        }
+    }
+    
         font-weight: 700;
         font-size: 12px;
         color: $gray-darker;
@@ -389,17 +410,6 @@ footer {
         a {
             color: $gray-darker;
         }
-    }
-}
-
-.blog-post {
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        color: $header-bg-color;
     }
 }
 

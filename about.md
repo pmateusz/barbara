@@ -7,8 +7,9 @@ permalink: /about-me/
 permalink_pl: /o-mnie/
 permalink_de: /ueber-mich/
 ---
-<h1></h1>
-<div class="container">
+<div class="container main-content blog-post">
+  <h1>{% t pages.about %}</h1>
+  <p class="post-details"></p>
   <div class="container-fluid">
     <div class="row">  
       <div class="col-md-4">

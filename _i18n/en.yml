@@ -3,10 +3,12 @@ link:
 pages:
   home: Barbara Piesowicz's homepage
   about: About
+  services: Services
 navigation:
   start: Start
   blog: Blog
   contact: Contact
+  services: Services
   menu: Menu
   about: About
 home:

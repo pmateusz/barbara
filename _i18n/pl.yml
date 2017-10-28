@@ -2,10 +2,12 @@ pages:
   home: Strona domowa Barbary Piesowicz
   about: O Mnie
   blog: Blog
+  services: Usługi
 navigation:
   start: Start
   blog: Blog
   contact: Kontakt
+  services: Usługi
   menu: Menu
   about: O Mnie
 home:

@@ -2,9 +2,7 @@
 <li class="blog-post">
     <h2><a href="{% include relative-src.html src=post.url %}">{{ post.title }}</a></h2>
     {% include post-title.html post=post %}
-    <div class="post-content">
-        {{ post.excerpt }}
-        <div class="button"><a href="{% include relative-src.html src=post.url %}">{% t blog.go_to_article %}</a></div>
-    </div>
+    {{ post.excerpt }}
+    <div class="button"><a href="{% include relative-src.html src=post.url %}">{% t blog.go_to_article %}</a></div>
 </li>
 {% endfor %}
